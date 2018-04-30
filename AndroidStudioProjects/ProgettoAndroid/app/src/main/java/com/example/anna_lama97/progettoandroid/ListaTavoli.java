@@ -32,13 +32,16 @@ public class ListaTavoli extends AppCompatActivity {
         setContentView(R.layout.activity_lista_tavoli);
 
         vListaTavoli = findViewById(R.id.ListTavoli);
-        vSwitchLibero = findViewById(R.id.textLibero);
+        vSwitchLibero = (Switch) findViewById(R.id.switch1);
         vTav = findViewById(R.id.textTav);
+
+        vSwitchLibero.setChecked(false);
 
         dataTavoli = DataTavoli.getInstance();
 
         // Creo l'adapter
-        adapter = new TavoliAdapter(this, dataTavoli.getListaTavoli(true));
+
+        adapter = new TavoliAdapter(this, dataTavoli.getListaTavoli(false));
 
         // Associo l'adapter alla listview
         vListaTavoli.setAdapter(adapter);
@@ -60,6 +63,16 @@ public class ListaTavoli extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    vSwitchLibero.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+        if(vSwitchLibero.isChecked()){
+            adapter.setElencoTavoli(dataTavoli.getListaTavoli(true));
+        }
+        else {
+            adapter.setElencoTavoli(dataTavoli.getListaTavoli(false));
+            }
+        }
+    });
     }
 }
- // la la la la

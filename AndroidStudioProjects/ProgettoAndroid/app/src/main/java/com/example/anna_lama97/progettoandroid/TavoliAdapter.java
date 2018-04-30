@@ -68,7 +68,7 @@ public class TavoliAdapter extends BaseAdapter {
 
 
 
-    public void setElencoStudenti(List<Tavolo> elencoTavoli) {
+    public void setElencoTavoli(List<Tavolo> elencoTavoli) {
         this.elencoTavoli = elencoTavoli;
         notifyDataSetChanged();
     }

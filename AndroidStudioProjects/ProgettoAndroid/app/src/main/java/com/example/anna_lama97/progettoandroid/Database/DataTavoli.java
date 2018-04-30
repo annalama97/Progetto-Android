@@ -25,6 +25,7 @@ public class DataTavoli {
 
     /**
      * Ottiene il riferimento alla sorgente dati
+     *
      * @return restituisce l'instanza corrente
      */
     public static DataTavoli getInstance() {
@@ -45,16 +46,16 @@ public class DataTavoli {
     public List<Tavolo> getListaTavoli(boolean Bottone) {
 
         ArrayList<Tavolo> risultato = new ArrayList<Tavolo>();
-        if(Bottone = true)
+       if(Bottone == true)
         for (Map.Entry<String, Tavolo> elemento: elencoTavoli.entrySet()) {
             if(elemento.getValue().isStatoTav() == true)
                 risultato.add(elemento.getValue());
             }
          else {
-            for (Map.Entry<String, Tavolo> elemento: elencoTavoli.entrySet()) {
-                risultato.add(elemento.getValue());
-            }
-        }
+           for (Map.Entry<String, Tavolo> elemento : elencoTavoli.entrySet()) {
+               risultato.add(elemento.getValue());
+           }
+       }
 
         return risultato;
     }
@@ -64,12 +65,13 @@ public class DataTavoli {
         elencoTavoli.put("1", new Tavolo("1", 4, true));
         elencoTavoli.put("2", new Tavolo("2", 4, true));
         elencoTavoli.put("3", new Tavolo("3", 2, true));
-        elencoTavoli.put("4", new Tavolo("4", 2, true));
-        elencoTavoli.put("5", new Tavolo("5", 6, true));
+        elencoTavoli.put("4", new Tavolo("4", 2, false));
+        elencoTavoli.put("5", new Tavolo("5", 6, false));
         elencoTavoli.put("6", new Tavolo("6", 4, true));
         elencoTavoli.put("7", new Tavolo("7", 8, true));
         elencoTavoli.put("8", new Tavolo("8", 2, false));
     }
+
 
 }
 
