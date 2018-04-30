@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DettaglioStudenteActivity">
+
+    <TextView
+        android:id="@+id/textTav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/Numero_Tavolo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/textNumTav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="TextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textTav"
+        app:layout_constraintStart_toEndOf="@+id/textTav" />
+
+    <TextView
+        android:id="@+id/textPosti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/NumPosti"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTav" />
+
+    <TextView
+        android:id="@+id/textNumPosti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/textPosti"
+        app:layout_constraintStart_toEndOf="@+id/textPosti" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/Libero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPosti" />
+
+    <TextView
+        android:id="@+id/textLibero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintStart_toEndOf="@+id/textView3" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Progetto Android</string>
+    <string name="ListaTavoli">Lista Tavoli</string>
+    <string name="Liberi">Liberi</string>
+    <string name="Numero_Tavolo">NumTav</string>
+    <string name="NumPosti">Numero Posti</string>
+    <string name="Libero">Libero</string>
+</resources>
