@@ -75,5 +75,4 @@ public class TavoliAdapter extends BaseAdapter {
 
 }
 
-
-//commento
+//nviwjvpinv
